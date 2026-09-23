@@ -51,8 +51,8 @@ fun GameHomeScreen(onViewCatalogClick: () -> Unit) {
                     .fillMaxWidth()
                     .height(56.dp)
             ) {
-                Icon(imageVector = Icons.Filled.PlayArrow, contentDescription = null)
-                Spacer(modifier = Modifier.size(ButtonDefaults.IconSpacing))
+                //Icon(imageVector = Icons.Filled.PlayArrow, contentDescription = null)
+                // Spacer(modifier = Modifier.size(ButtonDefaults.IconSpacing))
                 Text(text = "Ver Catálogo", style = MaterialTheme.typography.titleMedium)
             }
         }

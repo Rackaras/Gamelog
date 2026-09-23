@@ -1,5 +1,6 @@
 package com.example.gamelog.ui.screens
 
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
@@ -24,14 +25,15 @@ fun GameDetailScreen(
     Scaffold(
         topBar = { GameTopAppBar(title = "Detalle", onBackClick = onBackClick) }
     ) { innerPadding ->
-        GameDetailCard(
-            game = game,
+        Column(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(innerPadding)
                 .verticalScroll(rememberScrollState())
                 .padding(16.dp)
-        )
+        ) {
+            GameDetailCard(game = game)
+        }
     }
 }
 

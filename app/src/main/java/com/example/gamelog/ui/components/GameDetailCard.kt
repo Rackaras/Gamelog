@@ -30,7 +30,7 @@ fun GameDetailCard(game: Game, modifier: Modifier = Modifier) {
         GameCoverImage(imageUrl = game.imageUrl, contentDescription = game.title)
         Column(
             verticalArrangement = Arrangement.spacedBy(12.dp),
-            modifier = Modifier.padding(16.dp)
+            modifier = Modifier.padding(start = 16.dp, top = 16.dp, end = 16.dp, bottom = 8.dp)
         ) {
             Text(
                 text = game.title,

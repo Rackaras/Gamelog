@@ -3,7 +3,7 @@ package com.example.gamelog.data
 import com.example.gamelog.model.Game
 
 private fun steamCover(appId: Int) =
-    "https://cdn.cloudflare.steamstatic.com/steam/apps/$appId/header.jpg"
+        "https://cdn.cloudflare.steamstatic.com/steam/apps/$appId/header.jpg"
 
 /** Lista de videojuegos que se muestran en el catálogo. */
 object GameDataSource {
