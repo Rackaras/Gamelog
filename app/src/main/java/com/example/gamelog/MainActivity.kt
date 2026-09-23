@@ -10,6 +10,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.tooling.preview.Preview
 import com.example.gamelog.data.GameDataSource
 import com.example.gamelog.model.Game
 import com.example.gamelog.ui.GameScreen
@@ -63,5 +64,13 @@ fun GameApp(games: List<Game> = GameDataSource.games) {
                 onBackClick = { currentScreen = GameScreen.Catalog }
             )
         }
+    }
+}
+
+@Preview(showBackground = true, showSystemUi = true)
+@Composable
+fun GameAppPreview() {
+    GamelogTheme {
+        GameApp()
     }
 }
