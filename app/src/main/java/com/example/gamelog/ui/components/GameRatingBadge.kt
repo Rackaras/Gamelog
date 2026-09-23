@@ -18,7 +18,7 @@ import androidx.compose.ui.unit.dp
 import com.example.gamelog.ui.theme.GamelogTheme
 import java.util.Locale
 
-/** Insignia con la calificación del videojuego (stateless). */
+/** Insignia con la calificación del videojuego. */
 @Composable
 fun GameRatingBadge(rating: Double, modifier: Modifier = Modifier) {
     Surface(

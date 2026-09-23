@@ -20,7 +20,7 @@ import com.example.gamelog.data.GameDataSource
 import com.example.gamelog.model.Game
 import com.example.gamelog.ui.theme.GamelogTheme
 
-/** Tarjeta de detalle (stateless) con todos los atributos del juego. */
+/** Tarjeta con toda la información de un videojuego. */
 @Composable
 fun GameDetailCard(game: Game, modifier: Modifier = Modifier) {
     Card(
@@ -62,7 +62,7 @@ fun GameDetailCard(game: Game, modifier: Modifier = Modifier) {
     }
 }
 
-/** Fila etiqueta/valor reutilizada en el detalle. */
+/** Fila que muestra un dato del videojuego con su etiqueta. */
 @Composable
 fun GameAttributeRow(label: String, value: String, modifier: Modifier = Modifier) {
     Row(modifier = modifier.fillMaxWidth()) {

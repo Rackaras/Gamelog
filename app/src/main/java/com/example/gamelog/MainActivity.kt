@@ -30,18 +30,12 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-/**
- * Componente STATEFUL: es el único dueño del estado de navegación.
- *
- * Aplica State Hoisting: el estado (pantalla actual y juego seleccionado) vive aquí
- * y se baja a las pantallas stateless como datos; los eventos suben como lambdas.
- */
+/** Controla la pantalla actual y el videojuego seleccionado. */
 @Composable
 fun GameApp(games: List<Game> = GameDataSource.games) {
     var currentScreen by remember { mutableStateOf(GameScreen.Home) }
     var selectedGame by remember { mutableStateOf<Game?>(null) }
 
-    // Botón "atrás" del sistema: Detalle -> Catálogo -> Inicio.
     BackHandler(enabled = currentScreen != GameScreen.Home) {
         currentScreen = when (currentScreen) {
             GameScreen.Detail -> GameScreen.Catalog

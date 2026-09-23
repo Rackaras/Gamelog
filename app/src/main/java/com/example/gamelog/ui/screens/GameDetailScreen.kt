@@ -15,10 +15,7 @@ import com.example.gamelog.ui.components.GameDetailCard
 import com.example.gamelog.ui.components.GameTopAppBar
 import com.example.gamelog.ui.theme.GamelogTheme
 
-/**
- * Pantalla de Detalle (stateless): recibe el juego seleccionado desde el componente
- * padre y la flecha de la TopAppBar emite [onBackClick] para volver al catálogo.
- */
+/** Pantalla con el detalle del videojuego seleccionado. */
 @Composable
 fun GameDetailScreen(
     game: Game,

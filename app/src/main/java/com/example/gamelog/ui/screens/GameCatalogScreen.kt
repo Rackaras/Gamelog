@@ -17,10 +17,7 @@ import com.example.gamelog.ui.components.GameItem
 import com.example.gamelog.ui.components.GameTopAppBar
 import com.example.gamelog.ui.theme.GamelogTheme
 
-/**
- * Pantalla de Catálogo (stateless): recibe la lista y avisa hacia arriba qué juego
- * se tocó mediante [onGameClick]. No decide la navegación por sí misma.
- */
+/** Pantalla con el listado de videojuegos del catálogo. */
 @Composable
 fun GameCatalogScreen(
     games: List<Game>,
@@ -38,7 +35,7 @@ fun GameCatalogScreen(
     }
 }
 
-/** Lista reutilizable de juegos. */
+/** Lista desplazable de videojuegos. */
 @Composable
 fun GameList(
     games: List<Game>,

@@ -5,7 +5,7 @@ import com.example.gamelog.model.Game
 private fun steamCover(appId: Int) =
     "https://cdn.cloudflare.steamstatic.com/steam/apps/$appId/header.jpg"
 
-/** Datos dummy en memoria para el catálogo (sin Room ni ViewModel). */
+/** Lista de videojuegos que se muestran en el catálogo. */
 object GameDataSource {
 
     val games: List<Game> = listOf(

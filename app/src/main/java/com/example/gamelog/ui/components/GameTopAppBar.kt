@@ -14,9 +14,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.gamelog.ui.theme.GamelogTheme
 
-/**
- * TopAppBar reutilizable (stateless). Si [onBackClick] es null no se muestra la flecha.
- */
+/** Barra superior con título y flecha opcional para regresar. */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun GameTopAppBar(

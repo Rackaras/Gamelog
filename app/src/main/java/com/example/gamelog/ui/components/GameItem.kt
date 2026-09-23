@@ -19,10 +19,7 @@ import com.example.gamelog.data.GameDataSource
 import com.example.gamelog.model.Game
 import com.example.gamelog.ui.theme.GamelogTheme
 
-/**
- * Ítem del catálogo (stateless): muestra un resumen del juego y notifica el tap
- * hacia arriba mediante [onClick].
- */
+/** Tarjeta con el resumen de un videojuego en el catálogo. */
 @Composable
 fun GameItem(
     game: Game,

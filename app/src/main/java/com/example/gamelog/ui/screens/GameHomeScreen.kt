@@ -29,7 +29,7 @@ import androidx.compose.ui.unit.dp
 import com.example.gamelog.ui.components.GameTopAppBar
 import com.example.gamelog.ui.theme.GamelogTheme
 
-/** Pantalla de Inicio (stateless): solo emite el evento [onViewCatalogClick]. */
+/** Pantalla de inicio con la bienvenida y el acceso al catálogo. */
 @Composable
 fun GameHomeScreen(onViewCatalogClick: () -> Unit) {
     Scaffold(

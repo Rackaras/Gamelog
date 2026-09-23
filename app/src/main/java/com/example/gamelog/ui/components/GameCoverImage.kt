@@ -9,7 +9,7 @@ import androidx.compose.ui.graphics.painter.ColorPainter
 import androidx.compose.ui.layout.ContentScale
 import coil3.compose.AsyncImage
 
-/** Portada del videojuego cargada desde su URL (formato header de Steam, 460x215). */
+/** Portada del videojuego cargada desde su URL. */
 @Composable
 fun GameCoverImage(
     imageUrl: String,
